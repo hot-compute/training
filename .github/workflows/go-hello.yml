@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line Go script
-        run: go run hello-world.go
+        run: go run golang/hello-world.go
 
       # Runs a set of commands using the runners shell
       - name: Build Go program
