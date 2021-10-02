@@ -12,7 +12,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - golang
+      - 'golang/**'
   pull_request:
     branches: [ main ]
 
