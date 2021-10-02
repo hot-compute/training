@@ -25,18 +25,24 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
+      # Just run Go script
       - name: Run a one-line Go script
-        run: go run golang/hello-world.go
+        run: |
+          pwd
+          cd golang
+          go run hello-world.go
 
-      # Runs a set of commands using the runners shell
+      # Build Go script
       - name: Build Go program
         run: |
-          go build golang/hello-world.go
-          ls golang/
+          pwd
+          cd golang
+          go build hello-world.go
+          ls
 
-      # Runs a single command using the runners shell
+      # Rusn Go app
       - name: Run a one-line Go script
         run: |
+          pwd
           cd golang
           ./hello-world
