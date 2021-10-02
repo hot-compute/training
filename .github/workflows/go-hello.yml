@@ -2,6 +2,10 @@
 
 name: Go Hello
 
+defaults:
+  run: 
+    working-directory: golang
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -27,19 +31,13 @@ jobs:
 
       - name: Run a Go script
         run: |
-          pwd
-          cd golang
           go run hello-world.go
 
       - name: Build a Go program
         run: |
-          pwd
-          cd golang
           go build hello-world.go
           ls
 
       - name: Run a Go program
         run: |
-          pwd
-          cd golang
           ./hello-world
