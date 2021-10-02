@@ -25,14 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Just run Go script
       - name: Run a Go script
         run: |
           pwd
           cd golang
           go run hello-world.go
 
-      # Build Go script
       - name: Build a Go program
         run: |
           pwd
@@ -40,7 +38,6 @@ jobs:
           go build hello-world.go
           ls
 
-      # Rusn Go app
       - name: Run a Go program
         run: |
           pwd
