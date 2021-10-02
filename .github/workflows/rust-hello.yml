@@ -37,5 +37,4 @@ jobs:
 
       - name: Run
         run: |
-          chmod +x hello-world.rs
-          ./hello-world.rs
+          ./hello-world
