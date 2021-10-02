@@ -33,4 +33,4 @@ jobs:
 
       - name: Run
         run: |
-          ruby hello-world.rs
+          ruby hello-world.rb
