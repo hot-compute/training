@@ -8,7 +8,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'bash'
+      - 'bash/**'
   pull_request:
     branches: [ main ]
 
