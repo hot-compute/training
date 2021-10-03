@@ -15,3 +15,9 @@ Creating an app within the project is handled by doing this. Also performed from
 ```
 python manage.py startapp polls
 ```
+
+To create any necessary tables used by installed apps, use the migrate command:
+
+```
+python manage.py migrate
+```
