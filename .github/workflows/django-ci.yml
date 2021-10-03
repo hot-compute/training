@@ -2,7 +2,7 @@ name: Django CI
 
 defaults:
   run: 
-    working-directory: django
+    working-directory: django/mysite
 
 on:
   push:
