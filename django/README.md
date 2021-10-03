@@ -1,0 +1,11 @@
+The mysite example was created with the following commands:
+
+```
+django-admin startproject mysite
+```
+
+And then to start the dev web server, this command can be used: 
+
+```
+python manage.py runserver
+```
