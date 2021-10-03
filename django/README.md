@@ -10,7 +10,7 @@ And then to start the dev web server, this command can be used after entering th
 python manage.py runserver
 ```
 
-Creating an app within the project is handled by doing this:
+Creating an app within the project is handled by doing this. Also performed from the first mysite directory. 
 
 ```
 python manage.py startapp polls
