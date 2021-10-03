@@ -21,3 +21,9 @@ To create any necessary tables used by installed apps, use the migrate command:
 ```
 python manage.py migrate
 ```
+
+The interactive shell can be started using this command:
+
+```
+python manage.py shell
+```
