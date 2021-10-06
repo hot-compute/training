@@ -3,7 +3,7 @@ import { onMount } from "svelte";
 import { apiData, drinkNames } from './store.js';
 
 onMount(async () => {
-  fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Bourbon")
+  fetch("https://api.guildwars2.com/v2/achievements/daily")
   .then(response => response.json())
   .then(data => {
 		console.log(data);
@@ -16,7 +16,7 @@ onMount(async () => {
 </script>
 
 <main>
-	<h1>Whiskey Drinks Menu</h1>
+	<h1>Guild Wars 2 Daily Achievements</h1>
 	<ul>
 	{#each $drinkNames as drinkName}
 		<li>{drinkName}</li>
