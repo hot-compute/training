@@ -1,4 +1,2 @@
-# training
-Here we will train heavily in modern cloud tech. 
-
-Python is up first.
+# Training
+Here we are training and experimenting in various modern platforms, languates, and tools. 
