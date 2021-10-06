@@ -1,6 +1,6 @@
 <script>
 import { onMount } from "svelte";
-import { apiData, drinkNames } from './store.js';
+import { apiData, achievementIds } from './store.js';
 
 onMount(async () => {
   fetch("https://api.guildwars2.com/v2/achievements/daily")
@@ -18,8 +18,8 @@ onMount(async () => {
 <main>
 	<h1>Guild Wars 2 Daily Achievements</h1>
 	<ul>
-	{#each $drinkNames as drinkName}
-		<li>{drinkName}</li>
+	{#each $achievementIds as achievementId}
+		<li>{achievementId}</li>
 	{/each}
 	</ul>
 </main>
