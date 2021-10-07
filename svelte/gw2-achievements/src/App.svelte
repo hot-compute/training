@@ -16,7 +16,7 @@ onMount(async () => {
 </script>
 
 <main>
-	<h1>Guild Wars 2 Daily Achievements</h1>
+	<h1>Guild Wars 2 Achievements Daily</h1>
 	<ul>
 	{#each $achievementIds as achievementId}
 		<li>{achievementId}</li>
