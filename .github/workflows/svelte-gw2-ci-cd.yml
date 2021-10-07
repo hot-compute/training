@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths: 
+      - 'svelte/gw2-achievements/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:

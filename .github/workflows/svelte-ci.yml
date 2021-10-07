@@ -12,7 +12,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'svelte/**'
+      - 'svelte/my-svelte-project/**'
   pull_request:
     branches: [ main ]
 
