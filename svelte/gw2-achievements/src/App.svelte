@@ -12,6 +12,15 @@ onMount(async () => {
     console.log(error);
     return [];
   });
+  fetch("https://api.guildwars2.com/v2/achievements?ids=2957,1969")
+  .then(response => response.json())
+  .then(data => {
+		console.log(data);
+    achievements.set(data);
+  }).catch(error => {
+    console.log(error);
+    return [];
+  });
 });
 </script>
 

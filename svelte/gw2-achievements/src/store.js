@@ -16,3 +16,10 @@ export const achievementIds = derived(apiData, ($apiData) => {
   }
   return [];
 });
+
+export const achievements = derived(apiData, ($apiData) => {
+  if ($apiData.pve){
+    return $apiData.pve.map(achievementId => achievementId.id);
+  }
+  return [];
+});
