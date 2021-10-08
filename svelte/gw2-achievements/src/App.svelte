@@ -1,6 +1,6 @@
 <script>
 import { onMount } from "svelte";
-import { apiData, achievementIds } from './store.js';
+import { apiData, achievementIds, achievementsData, achievements } from './store.js';
 
 onMount(async () => {
   fetch("https://api.guildwars2.com/v2/achievements/daily")
@@ -16,7 +16,7 @@ onMount(async () => {
   .then(response => response.json())
   .then(data => {
 		console.log(data);
-    achievements.set(data);
+    achievementsData.set(data);
   }).catch(error => {
     console.log(error);
     return [];
@@ -26,9 +26,17 @@ onMount(async () => {
 
 <main>
 	<h1>Guild Wars 2 Achievements Daily</h1>
+  <h2>List of Daily ID's</h2>
 	<ul>
 	{#each $achievementIds as achievementId}
 		<li>{achievementId}</li>
+	{/each}
+	</ul>
+
+  <h2>List of Achievements by ID</h2>
+	<ul>
+	{#each $achievements as achievement}
+		<li>{achievement}</li>
 	{/each}
 	</ul>
 </main>

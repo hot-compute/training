@@ -5,6 +5,7 @@ This assumes the data you're pulling back will be an array.
 If it's going to be an object, default this to an empty object.
 **/
 export const apiData = writable([]);
+export const achievementsData = writable([]);
 
 /** Data transformation.
 For our use case, we only care about the drink names, not the other information.
@@ -17,9 +18,9 @@ export const achievementIds = derived(apiData, ($apiData) => {
   return [];
 });
 
-export const achievements = derived(apiData, ($apiData) => {
-  if ($apiData.pve){
-    return $apiData.pve.map(achievementId => achievementId.id);
+export const achievements = derived(achievementsData, ($achievementsData) => {
+  if ($achievementsData){
+    return $achievementsData.map(achievement => achievement.name);
   }
   return [];
 });
