@@ -2,13 +2,13 @@ name: Django CI
 
 defaults:
   run: 
-    working-directory: django/mysite
+    working-directory: django/gw2
 
 on:
   push:
     branches: [ main ]
     paths: 
-      - 'django/**'
+      - 'django/gw2/**'
   pull_request:
     branches: [ main ]
 
