@@ -1,0 +1,1 @@
+0 17 * * * /var/www/site/bin/move.sh
